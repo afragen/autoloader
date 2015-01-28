@@ -5,3 +5,8 @@ This repository contains a generic class autoloader that will load classes up to
 Additionally it contains a directory of class aliases for TEC/ECP's switch to using new class names. If your plugin user is using TEC/ECP 3.9 or lower you will have problems.
 
 PRs welcome, especially for additional class aliases as you find needing them. Please refer to the readme in that folder for additional information on how to create these.
+
+### Changelog
+
+#### 1.0.0
+* initial commit
