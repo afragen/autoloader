@@ -6,7 +6,8 @@ Additionally it contains a directory of class aliases for TEC/ECP's switch to us
 
 PRs welcome, especially for additional class aliases as you find needing them. Please refer to the readme in that folder for additional information on how to create these.
 
-### Changelog
+## Changelog
+[CHANGES.md](CHANGES.md)
 
-#### 1.0.0
-* initial commit
+## Credits
+Built by [Andy Fragen](https://twitter.com/andyfragen)

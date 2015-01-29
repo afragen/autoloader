@@ -6,8 +6,6 @@ namespace my_plugin;
 /**
  * Class Autoloader - generic autoload class
  *
- * Use with TEC/ECP add-on plugins
- * Class aliases are in /classes/310-class-aliases for user still on TEC/ECP 3.9 or lower
  * To use with different plugins be sure to create a new namespace.
  *
  * @package   Autoloader
