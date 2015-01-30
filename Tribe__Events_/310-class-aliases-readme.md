@@ -2,7 +2,7 @@ This directory contains class aliases for TEC/ECP 3.10 classes to 3.9 classes.
 
 In version 3.10 class naming was refactored to allow for PSR autoloading in the future.
 
-If your plugin references additional classes please submit a PR after creating the alias in the pattern as follows.
+If your plugin references additional classes please submit a PR after creating the alias in the pattern as follows. Name your files as they are named in TEC/ECP 3.10 including sub-directory structure. In this autoloader `Tribe__Events_` is equivalent to `lib`.
 
 ```php
 <php?

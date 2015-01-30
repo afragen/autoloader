@@ -13,7 +13,7 @@ namespace my_plugin;
  * @license   GPL-2.0+
  * @link      http://github.com/afragen/autoloader
  * @copyright 2015 Andy Fragen
- * @version   1.0.0
+ * @version   1.1.0
  */
 
 class Autoloader {
@@ -33,12 +33,20 @@ class Autoloader {
 	protected function autoload( $class ) {
 		$classes = array();
 
-		// 2 directories deep, add more as needed
-		$directories = array( '', '*/', '*/*/' );
+		// 4 directories deep, add more as needed
+		$directories = array( '', '*/', '*/*/', '*/*/*/', '*/*/*/*/' );
 
 		foreach ( $directories as $directory ) {
 			foreach ( glob( trailingslashit( __DIR__ ) . $directory . '*.php' ) as $file ) {
-				$class_name                           = str_replace( '.php', '', basename( $file ) );
+				$base       = __DIR__;
+				$class_dir  = dirname( $file );
+				$class_dir  = str_replace( $base, '', $class_dir );
+				$class_dir  = ltrim( $class_dir, '/' );
+				$class_dir  = str_replace( '/', '_', $class_dir );
+				$class_name = str_replace( '.php', '', basename( $file ) );
+				if ( ! empty( $class_dir ) ) {
+					$class_name = $class_dir . '_' . $class_name;
+				}
 				$classes[ strtolower( $class_name ) ] = $file;
 			}
 		}
