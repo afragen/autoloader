@@ -1,6 +1,6 @@
 ## Autoloader Class and Class Aliases
 
-This repository contains a generic class autoloader that will load classes up to 4 or more levels deep. It requires PHP 5.3 or greater as it uses namespacing to avoid collisions if more than one plugin requires it's use. This class will load in PSR 0 style using `_` as a directory spacer.
+This repository contains a generic class autoloader that will load classes up to 4 or more levels deep. It requires PHP 5.3 or greater as it uses namespacing to avoid collisions if more than one plugin requires it's use. This class will load in PSR 4 style using `__` as a directory spacer.
 
 Additionally it contains a directory of class aliases for TEC/ECP's switch to using new class names. If your plugin user is using TEC/ECP 3.9 or lower you will have problems.
 

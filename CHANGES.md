@@ -1,3 +1,7 @@
+#### 1.1.1
+* change directory spacer to double underscore per PSR 4
+* change directory/file naming for PSR 4
+
 #### 1.1.0
 * redesign to load classes like PSR 0 and add `_` as directory spacer
 * rename TEC/ECP alias directory and files for PSR 0 style loading
