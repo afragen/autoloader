@@ -1,3 +1,7 @@
+#### 2.0.0
+* use proper namespacing
+* show proper loading of TEC/ECP compatibility classes
+
 #### 1.1.1
 * change directory spacer to double underscore per PSR 4
 * change directory/file naming for PSR 4
