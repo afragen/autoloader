@@ -1,3 +1,6 @@
+#### 3.0.0
+* refactor as composer library, though likely better to just use composer's autoloader
+
 #### 2.0.0
 * use proper namespacing
 * show proper loading of TEC/ECP compatibility classes
