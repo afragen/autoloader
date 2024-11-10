@@ -21,4 +21,4 @@ new \Fragen\Autoloader( $root, $classmap );
 [CHANGES.md](CHANGES.md)
 
 ## Credits
-Built by [Andy Fragen](https://twitter.com/andyfragen)
+Built by [Andy Fragen](https://thefragens.com/)
